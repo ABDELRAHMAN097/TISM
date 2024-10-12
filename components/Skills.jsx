@@ -12,7 +12,7 @@ import SandWithFiber  from '../public/assets/img/BarnPros.jpg'
 import Rubber  from '../public/assets/img/Straight.jpg'
 import StallRubber  from '../public/assets/img/Stall+Rubber.jpg'
 import mix  from '../public/assets/img/Mix_.jpg'
-
+              {/* +20 102 367 1214 هاتف المبرمج */}
 const Skills = () => {
   const [language, setLanguage] = useRecoilState(languageState);
   const [isClient, setIsClient] = useState(false);

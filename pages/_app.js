@@ -2,7 +2,7 @@ import Navbar from '../components/Navbar';
 import '../styles/globals.css';
 import { RecoilRoot } from 'recoil';
 import Head from 'next/head';
-
+              {/* +20 102 367 1214 هاتف المبرمج */}
 function MyApp({ Component, pageProps }) {
   return (
     <RecoilRoot>

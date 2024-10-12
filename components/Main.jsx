@@ -5,6 +5,7 @@ import { useRecoilState } from 'recoil';
 import main from '../public/assets/img/Rack.jpg'
 import { FaFacebook , FaInstagram, FaLinkedin, FaWhatsapp } from 'react-icons/fa';
 
+              {/* +20 102 367 1214 هاتف المبرمج */}
 
 const Main = () => {
   const [language, setLanguage] = useRecoilState(languageState);
@@ -58,7 +59,7 @@ const Main = () => {
               <div className='rounded-full shadow-lg shadow-gray-400 bg-yellow-500 p-4 cursor-pointer hover:scale-110 ease-in duration-300'>
                 <FaFacebook />
               </div>
-              {/* https://www.instagram.com/tismpro_/ */}
+              {/* +20 102 367 1214 هاتف المبرمج */}
             </a>
             <a
               href='https://www.instagram.com/tismpro_/'

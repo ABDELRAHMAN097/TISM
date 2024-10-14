@@ -6,6 +6,8 @@ import decor from "../public/assets/img/decor.png";
 import Image from "next/image";
 import Link from "next/link";
 import AboutImg from "../public/assets/img/about.jpg";
+import { Fade } from 'react-awesome-reveal';
+
 
 const About = () => {
   const [language, setLanguage] = useRecoilState(languageState);
@@ -37,11 +39,13 @@ const About = () => {
           <div className="w-48">
             <Image src={decor} alt="decor" />
           </div>
+          <Fade cascade>
           <p className="uppercase text-xl tracking-widest text-[#53525f]">
             {translations[language].about}
           </p>
           <h2 className="py-4 text-[#e8c83e]">{translations[language].Who}</h2>
           <p className="py-2 text-gray-600">{translations[language].whatDo}</p>
+          </Fade>
           <Link href="/#projects">
             <p className="py-2 text-gray-600 underline cursor-pointer">
               {translations[language].OurProjects}

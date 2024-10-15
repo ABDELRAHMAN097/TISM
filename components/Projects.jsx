@@ -2,8 +2,8 @@ import React, { useState } from "react";
 import Image from "next/image";
 import decor from "../public/assets/img/decor.png";
 import img1 from '../public/assets/projects/pp.jpg';
-import img2 from '../public/assets/projects/Town Barns.jpg';  // استبدل الصور حسب الحاجة
-import img3 from '../public/assets/projects/Weidehütten.jpg';   // استبدل الصور حسب الحاجة
+import img2 from '../public/assets/projects/Town Barns.jpg';
+import img3 from '../public/assets/projects/Weidehütten.jpg';
 
 const sliderData = [
   { id: 1, title: "Technology 1", img: img1, desc: "Description 1" },
@@ -14,34 +14,31 @@ const sliderData = [
 const Projects = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
 
-  // وظيفة للتنقل إلى الشريحة التالية عند النقر على الصورة
   const handleSlideClick = (index) => {
     setCurrentSlide(index);
   };
 
   return (
-    <div id="projects" className="w-full">
-      <div className="max-w-[1240px] mx-auto px-2 py-16">
-        <div className="col-span-2 text-center md:text-left md:items-start flex flex-col items-center md:items-start">
+    <div id="projects" className="w-full px-4">
+      <div className="max-w-[1240px] mx-auto py-16 px-4 md:px-10">
+        <div className="col-span-2 text-center md:text-left md:items-start flex flex-col items-center">
           <div className="w-48">
             <Image src={decor} alt="decor" />
           </div>
-          <p className="text-xl tracking-widest uppercase text-[#53525f]">
-            Projects
-          </p>
+          <p className="text-xl tracking-widest uppercase text-[#53525f]">Projects</p>
           <h2 className="py-4 text-[#e8c83e]">What We&apos;ve Built</h2>
         </div>
 
         {/* السلايدر */}
-        <div className="relative w-full flex justify-center items-center pt-16">
-          <div className="flex justify-center items-center w-full space-x-4">
+        <div className="relative w-full flex justify-center items-center pt-16 px-4 md:px-10">
+          <div className="flex justify-center items-center w-full space-x-2 md:space-x-4">
             {sliderData.map((slide, index) => (
               <div
                 key={slide.id}
-                className={`relative transition-transform duration-500 ease-in-out cursor-pointer group ${
-                  currentSlide === index ? "flex-grow-[3]" : "flex-grow-[1] scale-90"
-                } flex-shrink-0 w-[150px] md:w-[300px] h-[150px] md:h-[300px] overflow-hidden rounded-xl`}
-                onClick={() => handleSlideClick(index)} // وظيفة الانتقال عند النقر على الصورة
+                className={`relative transition-all duration-500 ease-in-out cursor-pointer group ${
+                  currentSlide === index ? "flex-grow-2 h-[250px] md:h-[400px] w-[150px] md:w-[300px] overflow-hidden" : "flex-grow-1 h-[200px] md:h-[300px] w-[120px] md:w-[250px]"
+                } flex-shrink-0 rounded-xl`}
+                onClick={() => handleSlideClick(index)} 
               >
                 <Image
                   src={slide.img}
@@ -50,9 +47,9 @@ const Projects = () => {
                   objectFit="cover"
                   className="rounded-xl"
                 />
-                {/* النص الذي سيظهر عند الهوفر */}
+                
                 <div className="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-xl">
-                  <h3 className="text-2xl text-white">{slide.title}</h3>
+                  <h3 className="text-sm md:text-2x text-white">{slide.title}</h3>
                   <p className="text-gray-300">{slide.desc}</p>
                 </div>
               </div>

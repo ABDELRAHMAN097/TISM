@@ -38,7 +38,7 @@ function Slids() {
           }}
           className="mySwiper"
         >
-          {/* توحيد أبعاد الصور باستخدام object-cover */}
+          
           <SwiperSlide className="flex justify-center items-center">
             <div className="h-32 w-32 flex items-center justify-center">
               <Image src={slid1} className="rounded-xl object-cover" alt="/" layout="fill" />

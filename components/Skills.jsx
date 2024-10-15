@@ -171,7 +171,7 @@ const Skills = () => {
                   alt="/"
                 />
               </div>
-              <div className="flex flex-col items-center justify-center">
+              <div className="flex flex-col items-center justify-center ">
                 <h3>{translations[language].WoodChips}</h3>
               </div>
             </div>

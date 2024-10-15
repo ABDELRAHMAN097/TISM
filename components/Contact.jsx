@@ -8,7 +8,6 @@ import { IoMdMail } from "react-icons/io";
 import decor from "../public/assets/img/decor.png";
 import {
   FaFacebook,
-  FaGithub,
   FaInstagram,
   FaLinkedin,
   FaLinkedinIn,

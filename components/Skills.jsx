@@ -3,8 +3,6 @@ import translations from "../public/Translation/Translation";
 import { languageState } from "../recoil/languageState";
 import { useRecoilState } from "recoil";
 import Image from "next/image";
-import Github from "../public/assets/skills/github1.png";
-import NextJS from "../public/assets/skills/nextjs.png";
 import decor from "../public/assets/img/decor.png";
 import Additive from "../public/assets/img/Additive 1).jpg";
 import Wood from "../public/assets/img/STABLE STYLE.jpg";

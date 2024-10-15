@@ -149,14 +149,14 @@ const Skills = () => {
               <div className="m-auto">
                 <Image
                   className="rounded-xl"
-                  src={Github}
+                  src={Wood}
                   width="100px"
                   height="100px"
                   alt="/"
                 />
               </div>
               <div className="flex flex-col items-center justify-center">
-                <h3>Github</h3>
+                <h3>{translations[language].WoodChips}</h3>
               </div>
             </div>
           </div>
@@ -165,14 +165,14 @@ const Skills = () => {
               <div className="m-auto">
                 <Image
                   className="rounded-xl"
-                  src={NextJS}
+                  src={Wood}
                   width="100px"
                   height="100px"
                   alt="/"
                 />
               </div>
               <div className="flex flex-col items-center justify-center">
-                <h3>Next</h3>
+                <h3>{translations[language].WoodChips}</h3>
               </div>
             </div>
           </div>

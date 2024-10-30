@@ -11,8 +11,14 @@ const Loading = () => {
         height={150} // حدد الارتفاع الذي تريده
         objectFit="contain" // لضمان الحفاظ على نسبة العرض إلى الارتفاع
       />
-      <div className="mt-4">
-        <div className="animate-bounce w-4 h-4 bg-white rounded-full"></div>
+      <div className="mt-4 flex space-x-2">
+        {Array.from({ length: 4 }).map((_, index) => (
+          <div
+            key={index}
+            className={`animate-bounce w-4 h-4 bg-yellow-500 rounded-full`}
+            style={{ animationDelay: `${index * 100}ms` }} // تأخير الأنيميشن
+          ></div>
+        ))}
       </div>
     </div>
   );

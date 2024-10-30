@@ -9,18 +9,17 @@ import Slids from '../components/Slids';
 import Loading from '../components/Loading';
 
 export default function Home() {
-  // حالة التحميل
+  
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     const timer = setTimeout(() => {
       setLoading(false); 
-    }, 2000); 
+    }, 3000); 
 
     return () => clearTimeout(timer);
   }, []);
 
-  // إذا كانت الصفحة في حالة تحميل، ارجع مكون التحميل
   if (loading) {
     return <Loading />;
   }

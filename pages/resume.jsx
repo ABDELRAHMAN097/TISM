@@ -15,7 +15,7 @@ const Resume = () => {
   useEffect(() => {
     const timer = setTimeout(() => {
       setloading(false); 
-    }, 2000); 
+    }, 3000); 
 
     return () => clearTimeout(timer);
   }, []);

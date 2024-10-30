@@ -4,10 +4,21 @@ import { languageState } from "../recoil/languageState";
 import { useRecoilState } from "recoil";
 import Head from "next/head";
 import { FaLinkedinIn, FaWhatsapp } from "react-icons/fa";
+import Loading from '../components/Loading';
 
 const Resume = () => {
   const [language, setLanguage] = useRecoilState(languageState);
   const [isClient, setIsClient] = useState(false);
+  // loading
+  const [loading, setloading] = useState(true);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setloading(false); 
+    }, 2000); 
+
+    return () => clearTimeout(timer);
+  }, []);
 
   useEffect(() => {
     setIsClient(true);
@@ -19,8 +30,8 @@ const Resume = () => {
     }
   }, [setLanguage]);
 
-  if (!isClient) {
-    return null;
+  if (!isClient || loading) {
+    return <Loading />; 
   }
   const dir = language === "ar" ? "rtl" : "ltr";
   const handleWhatsAppClick = () => {

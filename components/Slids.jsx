@@ -13,6 +13,9 @@ import slid6 from '../public/assets/img/dvdv.jpg';
 import slid7 from '../public/assets/img/nm.jpg';
 import slid8 from '../public/assets/img/Rubber.jpg';
 import slid9 from '../public/assets/img/BarnPros.jpg';
+import slid10 from '../public/assets/img/Climate_.jpg';
+import slid11 from '../public/assets/img/Town Barns.jpg';
+import slid12 from '../public/assets/img/fancy.jpg';
 
 function Slids() {
   return (
@@ -82,6 +85,21 @@ function Slids() {
           <SwiperSlide className="flex justify-center items-center">
             <div className="h-32 w-32 flex items-center justify-center">
               <Image src={slid9} className="rounded-xl object-cover" alt="/" layout="fill" />
+            </div>
+          </SwiperSlide>
+          <SwiperSlide className="flex justify-center items-center">
+            <div className="h-32 w-32 flex items-center justify-center">
+              <Image src={slid10} className="rounded-xl object-cover" alt="/" layout="fill" />
+            </div>
+          </SwiperSlide>
+          <SwiperSlide className="flex justify-center items-center">
+            <div className="h-32 w-32 flex items-center justify-center">
+              <Image src={slid11} className="rounded-xl object-cover" alt="/" layout="fill" />
+            </div>
+          </SwiperSlide>
+          <SwiperSlide className="flex justify-center items-center">
+            <div className="h-32 w-32 flex items-center justify-center">
+              <Image src={slid12} className="rounded-xl object-cover" alt="/" layout="fill" />
             </div>
           </SwiperSlide>
         </Swiper>

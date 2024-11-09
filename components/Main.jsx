@@ -2,7 +2,8 @@ import React, { useEffect, useState } from 'react';
 import translations from '../public/Translation/Translation';
 import { languageState } from '../recoil/languageState';
 import { useRecoilState } from 'recoil';
-import { FaFacebook, FaInstagram, FaLinkedin, FaWhatsapp } from 'react-icons/fa';
+import { FaFacebook, FaGlobe , FaLinkedin, FaWhatsapp } from 'react-icons/fa';
+
 import { Fade } from 'react-awesome-reveal';
 
 const Main = () => {
@@ -68,12 +69,12 @@ const Main = () => {
               </div>
             </a>
             <a
-              href='https://www.instagram.com/tismpro_/'
+              href='https://tismpro.sa/'
               target='_blank'
               rel='noreferrer'
             >
               <div className='rounded-full shadow-lg shadow-gray-400 bg-yellow-500 p-4 cursor-pointer hover:scale-110 ease-in duration-300'>
-                <FaInstagram />
+                <FaGlobe   />
               </div>
             </a>
             <a

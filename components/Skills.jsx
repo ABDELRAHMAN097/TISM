@@ -4,12 +4,14 @@ import { languageState } from "../recoil/languageState";
 import { useRecoilState } from "recoil";
 import Image from "next/image";
 import decor from "../public/assets/img/decor.png";
-import Additive from "../public/assets/img/Additive 1).jpg";
+import Additive from "../public/assets/img/arena2.jpg";
 import Wood from "../public/assets/img/STABLE STYLE.jpg";
-import SandWithFiber from "../public/assets/img/BarnPros.jpg";
-import Rubber from "../public/assets/img/Straight.jpg";
+import SandWithFiber from "../public/assets/img/sand.jpg";
+import Rubber from "../public/assets/img/about.jpg";
 import StallRubber from "../public/assets/img/Stall+Rubber.jpg";
 import mix from "../public/assets/img/Mix_.jpg";
+import fiber from "../public/assets/img/pp.jpg";
+
 
 const Skills = () => {
   const [language, setLanguage] = useRecoilState(languageState);
@@ -45,6 +47,7 @@ const Skills = () => {
             {translations[language].Offer}
           </h2>
         </div>
+
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
           <div className="p-2 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
@@ -62,6 +65,7 @@ const Skills = () => {
               </div>
             </div>
           </div>
+          
           <div className="p-2 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
               <div className="m-auto">
@@ -78,6 +82,7 @@ const Skills = () => {
               </div>
             </div>
           </div>
+
           <div className="p-2 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
               <div className="m-auto">
@@ -94,6 +99,7 @@ const Skills = () => {
               </div>
             </div>
           </div>
+
           <div className="p-2 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
               <div className="m-auto">
@@ -110,7 +116,8 @@ const Skills = () => {
               </div>
             </div>
           </div>
-          <div className="p-2 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
+
+          {/* <div className="p-2 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
               <div className="m-auto">
                 <Image
@@ -126,6 +133,7 @@ const Skills = () => {
               </div>
             </div>
           </div>
+
           <div className="p-2 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
               <div className="m-auto">
@@ -141,7 +149,8 @@ const Skills = () => {
                 <h3>{translations[language].mix}</h3>
               </div>
             </div>
-          </div>
+          </div> */}
+
           <div className="p-2 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
               <div className="m-auto">
@@ -158,12 +167,13 @@ const Skills = () => {
               </div>
             </div>
           </div>
+
           <div className="p-2 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
               <div className="m-auto">
                 <Image
                   className="rounded-xl"
-                  src={Wood}
+                  src={fiber}
                   width="100px"
                   height="100px"
                   alt="/"
@@ -174,6 +184,7 @@ const Skills = () => {
               </div>
             </div>
           </div>
+
         </div>
       </div>
     </div>
